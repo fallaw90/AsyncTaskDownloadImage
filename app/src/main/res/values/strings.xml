@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AsyncTaskDownloadImage</string>
+
+    <string-array name="urls">
+        <item>Image 1</item>
+        <item>Image 2</item>
+        <item>Image 3</item>
+        <item>Image 4</item>
+        <item>Image 5</item>
+        <item>Image 6</item>
+        <item>Image 7</item>
+    </string-array>
+    <string-array name="imageUrls">
+        <item>http://www.jambaar.com/wp-content/uploads/2020/01/Cahier-de-mesure.png</item>
+        <item>http://www.jambaar.com/wp-content/uploads/2020/01/COUNCILEX-couleur-noire.png</item>
+        <item>http://www.jambaar.com/wp-content/uploads/2020/01/sachet-500g.png</item>
+        <item>http://www.jambaar.com/wp-content/uploads/2020/01/AMBM5-960x817-2-1024x874.png</item>
+        <item>http://www.jambaar.com/wp-content/uploads/2020/01/Logo.png</item>
+        <item>http://www.jambaar.com/wp-content/uploads/2019/12/logo-JM.png</item>
+        <item>http://wallpaperswide.com/download/high_quality-wallpaper-5120x2048.jpg</item>
+    </string-array>
+
+</resources>

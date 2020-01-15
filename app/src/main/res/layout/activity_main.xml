@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCC00"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/urlSelectionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFF"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="textUri"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/downloadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/urlSelectionText"
+        android:layout_alignParentLeft="@+id/urlSelectionText"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:background="#33B5E5"
+        android:onClick="downloadImage"
+        android:text="Download Image"
+        android:textColor="#FFFFFF"
+        tools:ignore="RtlHardcoded" />
+
+
+    <ProgressBar
+        android:id="@+id/downloadProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:layout_below="@+id/downloadImage"
+        android:max="100"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"/>
+
+    <ListView
+        android:id="@+id/chooseImageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/downloadProgress"
+        android:layout_alignLeft="@+id/downloadProgress"
+        android:entries="@array/urls"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>
